@@ -32,7 +32,7 @@ document.getElementById("calculate").addEventListener('click', function() {
     if (totalExpense > income) {
         alert("Your expense is greater then your income!!!");
     } else if (totalExpense < 0) {
-        alert("Expense can't be minus!!")
+        alert("Expense can't be minus!!");
     } else {
         getElementFromTextField("total-expense").innerText = totalExpense;
         getElementFromTextField("balance").innerText = balance;
@@ -45,11 +45,12 @@ document.getElementById("calculate").addEventListener('click', function() {
         const savings = save * income;
         const remaining = balance - savings;
 
-        if (savings > balance) {
-            alert("You don't have enough balance!!");
-        } else {
+        if (savings < balance) {
             getElementFromTextField("saving-amount").innerText = savings;
             getElementFromTextField("remaining-amount").innerText = remaining;
+        } else {
+            alert("You don't have enough balance!!");
+
         }
 
 
