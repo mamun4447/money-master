@@ -23,11 +23,6 @@ input {
     text-align: center;
 }
 
-button {
-    box-shadow: 0 0 10px;
-    width: 25%;
-}
-
 #inputSection {
     border: none;
     border-radius: 10px;
