@@ -1,0 +1,33 @@
+body {
+    background-color: #918e8e;
+}
+
+section {
+    background-color: #dad8d8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+img {
+    width: 700px;
+    height: 805px;
+}
+
+input {
+    background-color: #dad8d8;
+    border: none;
+    box-shadow: inset -3px -3px 12px #ffffff;
+    border-radius: 5px;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+button {
+    box-shadow: 0 0 10px;
+}
+
+#inputSection {
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
