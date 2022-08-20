@@ -15,6 +15,7 @@ img {
 
 input {
     background-color: #dad8d8;
+    width: 75%;
     border: none;
     box-shadow: inset -3px -3px 12px #ffffff;
     border-radius: 5px;
@@ -24,6 +25,7 @@ input {
 
 button {
     box-shadow: 0 0 10px;
+    width: 25%;
 }
 
 #inputSection {

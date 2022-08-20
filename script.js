@@ -39,18 +39,19 @@ document.getElementById("calculate").addEventListener('click', function() {
     }
 
     // Savings Button
+    const sbalance = getElementFromTextField("balance").innerText;
+    const balances = parseFloat(sbalance);
     document.getElementById("saveBtn").addEventListener('click', function() {
         // savings Fields value
         const save = getValueFromInputField("saveInput") / 100;
         const savings = save * income;
-        const remaining = balance - savings;
+        const remaining = balances - savings;
 
-        if (savings < balance) {
+        if (savings < balances) {
             getElementFromTextField("saving-amount").innerText = savings;
             getElementFromTextField("remaining-amount").innerText = remaining;
         } else {
             alert("You don't have enough balance!!");
-
         }
 
 
